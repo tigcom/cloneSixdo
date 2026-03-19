@@ -1,0 +1,428 @@
+/* Contact Page Styles */
+
+/* Font Face Declarations */
+@font-face {
+    font-family: 'TCCC-Light';
+    src: url('../font/TCCC-UNITYHEADLINE-LIGHT.TTF') format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'TCCC-Medium';
+    src: url('../font/TCCC-UNITYHEADLINE-MEDIUM.TTF') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'TCCC-Black';
+    src: url('../font/TCCC-UNITYHEADLINE-BLACK.TTF') format('truetype');
+    font-weight: 900;
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'TCCC-Light', t-light, Arial;
+}
+
+/* Heading Styles */
+h1 {
+    font-family: 'TCCC-Black', Arial;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+h2 {
+    font-family: 'TCCC-Black', Arial;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+h3 {
+    font-family: 'TCCC-Medium', Arial;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+h4 {
+    font-family: 'TCCC-Medium', Arial;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+h5 {
+    font-family: 'TCCC-Light', Arial;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+h6 {
+    font-family: 'TCCC-Light', Arial;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/* Utility Classes for Font Sizes */
+.heading-xl {
+    font-family: 'TCCC-Black', Arial;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.heading-lg {
+    font-family: 'TCCC-Black', Arial;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.heading-md {
+    font-family: 'TCCC-Medium', Arial;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.heading-sm {
+    font-family: 'TCCC-Medium', Arial;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.text-lg {
+    font-family: 'TCCC-Light', Arial;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.text-md {
+    font-family: 'TCCC-Light', Arial;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.text-sm {
+    font-family: 'TCCC-Light', Arial;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+body {
+    background: #f6f3e4;
+}
+
+/* Page Title */
+.contact-page-title {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f6f3e4;
+    margin: 0 10%;
+    color: #241e1c;
+}
+
+.contact-page-title h1 {
+    font-size: 40px;
+    font-family: 'TCCC-Medium', Arial;
+}
+
+/* Contact Container */
+.contact-container {
+    display: flex;
+    gap: 50px;
+    padding: 40px 0;
+    background-color: #f6f3e4;
+    margin: 0 10%;
+    margin-bottom: 50px;
+}
+
+/* Contact Info Section */
+.contact-info-section {
+    width: 30%;
+}
+
+.info-block {
+    margin-bottom: 40px;
+}
+
+.info-block h3 {
+    font-size: 32px;
+    font-family: 'TCCC-Black', Arial;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.info-block p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #333;
+}
+
+.info-block p b {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.info-block p span {
+    color: #333;
+}
+
+.note {
+    font-size: 14px;
+    color: #666;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+.form-group {
+    width: 100%;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 13px 10px;
+    border: 2px solid #d8cfae;   /* viền be */
+    background-color: #f5f0df;   /* nền be nhạt */
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+
+.form-group input::placeholder {
+    color: #9aa3a7; 
+    font-weight: 400;
+}
+
+
+.form-group input:focus {
+    border-color: #c8b98f;
+}
+
+.form-group textarea {
+    width: 100%;
+    padding: 18px 20px;
+    border: 2px solid #d8cfae;   /* viền be */
+    background-color: #f5f0df;   /* nền be nhạt */
+    font-size: 18px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+
+.form-group textarea::placeholder {
+    color: #9aa3a7; 
+    font-weight: 400;
+}
+
+
+.form-group textarea:focus {
+    border-color: #c8b98f;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 13px 10px;
+    border: 2px solid #d8cfae;   /* viền be */
+    background-color: #f5f0df;   /* nền be nhạt */
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+.submit-btn {
+    background-color: #2b2b2b;   /* nền đen xám */
+    color: #ffffff;
+    padding: 16px 18px;
+    border: none;
+    font-size: 14px;
+     font-family: 'TCCC-Black', Arial;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.3s ease;
+    width: 18%;
+}
+
+/* Thêm mũi tên */
+.submit-btn::after {
+    content: "➜";
+    font-size: 18px;
+}
+
+/* Hover */
+.submit-btn:hover {
+    background-color: #1f1f1f;
+}
+
+.form-group select::placeholder {
+    color: #9aa3a7; 
+    font-weight: 400;
+}
+
+
+    
+.form-group select:focus {
+    border-color: #c8b98f;
+}
+
+.contact-form-section {
+    width: 570%;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer {
+    background-color: #f6f3e4;
+}
+
+nav {
+    background: #f6f3e4;
+    padding-left: 6%;
+    padding-right: 8%;
+    position: sticky;
+    border-bottom-color: rgb(227, 221, 187);
+    border-bottom-style: solid;
+    border-bottom-width: 0.666667px;
+    top: 0;
+}
+
+.row {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    padding-top: 7px;
+}
+
+.navMini {
+    border-left: 1px solid gray;
+    padding: 0 15px;
+    font-family: 'TCCC-Light', Arial;
+    font-weight: 300;
+}
+
+.row1 {
+    display: flex;
+    gap: 30px;
+    padding-top: 10px;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+
+.miniMenu {
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'TCCC-Medium', Arial;
+    color: #000000;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.miniMenu:hover {
+    box-shadow: 0 2px 0 0 rgb(0, 0, 0);
+}
+
+header {
+    background-color: #f6f3e4;
+}
+
+header img {
+    width: 100%;
+    display: block;
+}
+
+main {
+    background-color: #f6f3e4;
+}
+
+.den3 {
+    cursor: pointer;
+}
+
+.den3 p {
+    line-height: 1.8;
+    color: #666;
+    font-size: 15px;
+}
+
+.den3 p:first-child {
+    color: #000;
+    font-weight: bold;
+}
+
+.icon {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.icon i {
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.icon i:hover {
+    color: #bf0303;
+}
+
+.den1 {
+    width: 100%;
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.den2 {
+    display: flex;
+    width: calc(100% / 4);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 35px 10px;
+    border: #3b3b3b solid 0.01px;
+}
+
+.den2 i {
+    font-size: 30px;
+}
+
+.den2 b {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.den2 p {
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+.den3 p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.icon i {
+    font-size: 30px;
+    margin: 0 2px;
+}
+
+.icon {
+    margin-bottom: 18px;
+}
+
+.chaIcon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

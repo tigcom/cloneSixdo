@@ -1,0 +1,597 @@
+/* CSS for Product Detail - Matching the reference image */
+
+/* Font Face Declarations */
+@font-face {
+    font-family: 'TCCC-Light';
+    src: url('../font/TCCC-UNITYHEADLINE-LIGHT.TTF') format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'TCCC-Medium';
+    src: url('../font/TCCC-UNITYHEADLINE-MEDIUM.TTF') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'TCCC-Black';
+    src: url('../font/TCCC-UNITYHEADLINE-BLACK.TTF') format('truetype');
+    font-weight: 900;
+}
+
+/* Global Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'TCCC-Light', t-light, Arial;
+}
+
+/* Heading Styles */
+h1 {
+    font-family: 'TCCC-Black', Arial;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+h2 {
+    font-family: 'TCCC-Black', Arial;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+h3 {
+    font-family: 'TCCC-Medium', Arial;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+h4 {
+    font-family: 'TCCC-Medium', Arial;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+h5 {
+    font-family: 'TCCC-Light', Arial;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+h6 {
+    font-family: 'TCCC-Light', Arial;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/* Utility Classes for Font Sizes */
+.heading-xl {
+    font-family: 'TCCC-Black', Arial;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.heading-lg {
+    font-family: 'TCCC-Black', Arial;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.heading-md {
+    font-family: 'TCCC-Medium', Arial;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.heading-sm {
+    font-family: 'TCCC-Medium', Arial;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.text-lg {
+    font-family: 'TCCC-Light', Arial;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.text-md {
+    font-family: 'TCCC-Light', Arial;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.text-sm {
+    font-family: 'TCCC-Light', Arial;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+body {
+    background-color: #f6f3e4;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navigation */
+nav {
+    background: #f6f3e4;
+    border-bottom: 1px solid #e3ddbb;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.nav-top {
+    display: flex;
+    gap: 20px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.nav-item {
+    padding-left: 15px;
+    border-left: 1px solid #999;
+}
+
+.nav-item:first-child {
+    border-left: none;
+}
+
+.nav-bottom {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-bottom a {
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+.nav-bottom a:hover {
+    border-bottom: 2px solid #000;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 0 40px;
+    font-size: 14px;
+    color: #666;
+    text-transform: uppercase;
+}
+
+.breadcrumb a {
+    color: #666;
+}
+
+.breadcrumb span {
+    color: #000;
+}
+
+/* Main Content Layout */
+main {
+    max-width: 1400px;
+    margin: 0 5%;
+    padding: 0 40px 100px;
+}
+
+.product-detail-layout {
+    display: flex;
+    gap: 2.205%;
+}
+
+/* Thumbnail Column */
+.thumbnail-column {
+    width: 6.97%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.thumbnail-column img {
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.thumbnail-column img:hover {
+    border-color: #000;
+}
+
+/* Main Image Column */
+.main-image-column {
+    width: 39.41;
+}
+
+.main-image-column img {
+    width: 100%;
+    display: block;
+}
+
+
+
+/* Product Info Column */
+.product-info-column {
+    width: 49.21%;
+    flex-shrink: 0;
+    padding-left: 20px;
+}
+
+.product-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.sku {
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 15px;
+}
+
+.price-block {
+    margin-bottom: 30px;
+}
+
+.price-current {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.price-old {
+    font-size: 14px;
+    color: #bf0303;
+    text-decoration: line-through;
+    margin-top: 5px;
+}
+
+.color-selection {
+    margin-bottom: 30px;
+}
+
+.color-selection p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.color-options {
+    display: flex;
+    gap: 10px;
+}
+
+.color-swatch {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+
+.color-swatch.active {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px #000;
+}
+
+.size-selection {
+    margin-bottom: 30px;
+}
+
+.size-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.size-header p {
+    font-size: 14px;
+}
+
+.size-guide {
+    font-size: 12px;
+    color: #000;
+    text-decoration: underline;
+}
+
+.size-options {
+    display: flex;
+    gap: 10px;
+}
+
+.size-box {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+    background: #fff;
+}
+
+.size-box.disabled {
+    color: #ddd;
+    cursor: not-allowed;
+}
+
+.size-box.disabled::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #ddd;
+    transform: rotate(45deg);
+}
+
+.size-box.active {
+    border-color: #000;
+    font-weight: bold;
+}
+
+.purchase-actions {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.quantity-selector {
+    display: flex;
+    border: 1px solid #ddd;
+    align-items: center;
+}
+
+.quantity-selector button {
+    width: 40px;
+    height: 50px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.quantity-selector input {
+    width: 40px;
+    height: 50px;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    outline: none;
+}
+
+.add-to-cart-btn {
+    flex: 1;
+    background: #000;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.wishlist-btn {
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Accordions */
+.info-accordions {
+    border-top: 1px solid #000;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.accordion-content {
+    padding-bottom: 20px;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.accordion-content p {
+    margin-bottom: 5px;
+}
+
+/* Social Actions */
+.social-actions {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.social-actions a {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Related Products Section */
+.related-products-section {
+    margin-top: 100px;
+}
+
+.related-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.related-header h2 {
+    font-size: 14px;
+    font-family: 'TCCC-Medium', Arial;
+}
+
+.related-nav {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* khoảng cách đều */
+}
+
+.product-card {
+    width: calc((100% - 80px) / 5);
+}
+
+.product-card img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 13px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.product-card p {
+    font-size: 12px;
+    color: #666;
+}
+
+.den1 {
+    width: 100%;
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.den2 {
+    display: flex;
+    width: calc(100% / 4);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 35px 10px;
+    border: #3b3b3b solid 0.01px;
+}
+
+.den2 i {
+    font-size: 30px;
+}
+
+.den2 b {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.den2 p {
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+.den3 p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.icon i {
+    font-size: 30px;
+    margin: 0 2px;
+}
+
+.icon {
+    margin-bottom: 18px;
+}
+
+.chaIcon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: #f6f3e4;
+    padding: 45px 0;
+}
+
+.den3 {
+    cursor: pointer;
+}
+
+.den3 p {
+    line-height: 1.8;
+    color: #666;
+    font-size: 15px;
+}
+
+.den3 p:first-child {
+    color: #000;
+    font-weight: bold;
+}
+
+.icon {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.icon i {
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.icon i:hover {
+    color: #bf0303;
+}
